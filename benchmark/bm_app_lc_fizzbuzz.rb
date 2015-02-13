@@ -18,7 +18,7 @@ IS_EMPTY  = LEFT
 REST      = -> l { RIGHT[RIGHT[l]] }
 
 def to_integer(proc)
-  proc[-> n { n + 1 }][0]
+  proc[-> n { n + 1 }][->{}[].to_i]
 end
 
 def to_boolean(proc)
