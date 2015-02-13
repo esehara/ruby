@@ -22,7 +22,7 @@ def to_integer(proc)
 end
 
 def to_boolean(proc)
-  IF[proc][true][false]
+  IF[proc][!->{}[]][!!->{}[]]
 end
 
 def to_array(proc)
